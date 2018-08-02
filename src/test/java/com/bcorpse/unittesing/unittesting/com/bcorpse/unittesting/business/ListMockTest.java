@@ -5,9 +5,7 @@ import org.junit.Test;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.*;
 
 public class ListMockTest {
     List mock = mock(List.class);
@@ -31,5 +29,20 @@ public class ListMockTest {
         when(mock.get(anyInt())).thenReturn("thing you got");
         assertEquals("thing you got", mock.get(0));
         assertEquals("thing you got", mock.get(1));
+    }
+
+    @Test
+    public void verificationBasics(){
+        //SUT
+        String value1 = (String)mock.get(0);
+        String value2 = (String)mock.get(1);
+
+        //Verify
+        verify(mock).get(0);
+        verify(mock,times(2)).get(anyInt());
+        verify(mock,atLeast(1)).get(anyInt());
+        verify(mock,atMost(2)).get(anyInt());
+        verify(mock,never()).get(2);
+
     }
 }
