@@ -4,7 +4,7 @@
 !gradle/wrapper/gradle-wrapper.jar
 .attach_pid*
 .mvn/*
-/target/*
+target/*
 
 ### STS ###
 .apt_generated
