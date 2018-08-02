@@ -7,6 +7,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.anyInt;
 
 public class ListMockTest {
     List mock = mock(List.class);
@@ -26,8 +27,9 @@ public class ListMockTest {
     }
 
     @Test
-    public void returnWithParameters(){
-        when(mock.get(0)).thenReturn("thing you got");
+    public void returnWithGenericParameters(){
+        when(mock.get(anyInt())).thenReturn("thing you got");
         assertEquals("thing you got", mock.get(0));
+        assertEquals("thing you got", mock.get(1));
     }
 }
