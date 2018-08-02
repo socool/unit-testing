@@ -1,6 +1,8 @@
 package com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business;
 
+import com.sun.org.apache.xpath.internal.Arg;
 import org.junit.Test;
+import org.mockito.ArgumentCaptor;
 
 import java.util.List;
 
@@ -43,6 +45,20 @@ public class ListMockTest {
         verify(mock,atLeast(1)).get(anyInt());
         verify(mock,atMost(2)).get(anyInt());
         verify(mock,never()).get(2);
+
+    }
+
+    @Test
+    public void argumentCapture(){
+        //SUT
+        mock.add("Something");
+
+        //Verify
+        ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+        verify(mock).add(captor.capture());
+
+        assertEquals("Something", captor.getValue());
+
 
     }
 }
