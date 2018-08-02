@@ -3,7 +3,7 @@
 /bin/com/mojito/user/*
 !gradle/wrapper/gradle-wrapper.jar
 .attach_pid*
-
+.mvn/*
 
 ### STS ###
 .apt_generated
