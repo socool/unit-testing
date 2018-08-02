@@ -2,19 +2,21 @@ package com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-
+@RunWith(MockitoJUnitRunner.class)
 public class SomeBusinessMockTest {
+    @InjectMocks
     SomeBusinessImpl business = new SomeBusinessImpl();
-    SomeDataService dataServiceMock = mock(SomeDataService.class);
 
-    @Before
-    public void before(){
-        business.setSomeDataService(dataServiceMock);
-    }
+    @Mock
+    SomeDataService dataServiceMock;
 
     @Test
     public void calculateSumUsingDataService() {
