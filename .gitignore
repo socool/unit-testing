@@ -1,0 +1,35 @@
+.gradle
+/build/
+/bin/com/mojito/user/*
+!gradle/wrapper/gradle-wrapper.jar
+.attach_pid*
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VisualStudio Code ###
+.vscode
+
+### Mac OS ###
+.DS_Store

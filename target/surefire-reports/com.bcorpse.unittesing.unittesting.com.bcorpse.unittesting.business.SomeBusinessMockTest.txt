@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business.SomeBusinessMockTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.159 s - in com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business.SomeBusinessMockTest
