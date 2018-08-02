@@ -4,6 +4,7 @@ import com.sun.org.apache.xpath.internal.Arg;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -76,7 +77,39 @@ public class ListMockTest {
 
         assertEquals("Something 1", allValues.get(0));
         assertEquals("Something 2", allValues.get(1));
+    }
 
+    @Test
+    public void mocking(){
+        ArrayList arrayListMock = mock(ArrayList.class);
+        System.out.println(arrayListMock.get(0)); //null
+        System.out.println(arrayListMock.size());//0
+        arrayListMock.add("Test");
+        arrayListMock.add("Test 2");
+        System.out.println(arrayListMock.size());//0
+        when(arrayListMock.size()).thenReturn(5);
+        System.out.println(arrayListMock.size());//5
+    }
+
+    @Test
+    public void spying(){
+        ArrayList arrayListSpy = spy(ArrayList.class);
+        arrayListSpy.add("Test 0");
+        System.out.println(arrayListSpy.get(0)); //Test 0
+
+        System.out.println(arrayListSpy.size());//1
+
+        arrayListSpy.add("Test");
+        arrayListSpy.add("Test 2");
+        System.out.println(arrayListSpy.size());//3
+
+        when(arrayListSpy.size()).thenReturn(5);
+        System.out.println(arrayListSpy.size());//5
+
+        arrayListSpy.add("Test 4");
+        System.out.println(arrayListSpy.size());//5
+
+        verify(arrayListSpy).add("Test 4");
 
     }
 }
