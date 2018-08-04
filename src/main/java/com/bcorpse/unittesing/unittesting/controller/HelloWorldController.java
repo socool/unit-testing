@@ -1,4 +1,4 @@
-package com.bcorpse.unittesing.unittesting;
+package com.bcorpse.unittesing.unittesting.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
