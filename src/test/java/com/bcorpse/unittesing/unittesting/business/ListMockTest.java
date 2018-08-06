@@ -1,4 +1,4 @@
-package com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business;
+package com.bcorpse.unittesing.unittesting.business;
 
 import com.sun.org.apache.xpath.internal.Arg;
 import org.junit.Test;

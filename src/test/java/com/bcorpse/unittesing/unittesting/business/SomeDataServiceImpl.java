@@ -1,4 +1,6 @@
-package com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business;
+package com.bcorpse.unittesing.unittesting.business;
+
+import com.bcorpse.unittesing.unittesting.business.SomeDataService;
 
 public class SomeDataServiceImpl implements SomeDataService {
     @Override

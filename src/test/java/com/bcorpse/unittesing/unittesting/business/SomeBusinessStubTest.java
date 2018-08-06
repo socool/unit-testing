@@ -1,10 +1,10 @@
-package com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business;
+package com.bcorpse.unittesing.unittesting.business;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-class SomeDataServiceAllStub implements SomeDataService{
+class SomeDataServiceAllStub implements SomeDataService {
     @Override
     public int[] retrieveAllData() {
         return new int[] {1,2,3};
