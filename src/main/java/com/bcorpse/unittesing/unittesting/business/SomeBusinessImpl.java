@@ -1,4 +1,4 @@
-package com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business;
+package com.bcorpse.unittesing.unittesting.business;
 
 public class SomeBusinessImpl {
 

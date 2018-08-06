@@ -1,6 +1,7 @@
-package com.bcorpse.unittesing.unittesting.com.bcorpse.unittesting.business;
+package com.bcorpse.unittesing.unittesting.business;
 
-import org.junit.Before;
+import com.bcorpse.unittesing.unittesting.business.SomeBusinessImpl;
+import com.bcorpse.unittesing.unittesting.business.SomeDataService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
