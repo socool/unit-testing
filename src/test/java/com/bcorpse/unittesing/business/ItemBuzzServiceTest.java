@@ -24,7 +24,7 @@ public class ItemBuzzServiceTest {
         ItemRepository repository;
 
         @Test
-        public void calculateSumUsingDataService() {
+        public void retreiveAllItems() {
 
             //dataServiceMock retreiveAllData
             when(repository.findAll()).thenReturn(Arrays.asList(new Item(1,"Ball",10,10),
