@@ -1,4 +1,8 @@
-package com.bcorpse.unittesing;
+package com.bcorpse.unittesing.data;
 
-public class ItemRepository {
+import com.bcorpse.unittesing.model.Item;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ItemRepository extends JpaRepository<Item, Integer> {
+
 }

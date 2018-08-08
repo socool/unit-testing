@@ -55,6 +55,9 @@ public class Item {
         this.quantity = quantity;
     }
 
+    public Item(){
+    }
+
     public Item(int id, String name, int price, int quantity){
         this.setId(id);
         this.setName(name);
