@@ -1,4 +1,4 @@
-package com.bcorpse.unittesing.unittesting.controller;
+package com.bcorpse.unittesing.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

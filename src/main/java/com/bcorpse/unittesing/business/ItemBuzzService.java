@@ -1,6 +1,6 @@
-package com.bcorpse.unittesing.unittesting.business;
+package com.bcorpse.unittesing.business;
 
-import com.bcorpse.unittesing.unittesting.model.Item;
+import com.bcorpse.unittesing.model.Item;
 import org.springframework.stereotype.Component;
 
 @Component

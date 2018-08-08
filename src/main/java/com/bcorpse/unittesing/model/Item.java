@@ -1,4 +1,4 @@
-package com.bcorpse.unittesing.unittesting.model;
+package com.bcorpse.unittesing.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

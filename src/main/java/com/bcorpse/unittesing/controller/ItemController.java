@@ -1,7 +1,7 @@
-package com.bcorpse.unittesing.unittesting.controller;
+package com.bcorpse.unittesing.controller;
 
-import com.bcorpse.unittesing.unittesting.business.ItemBuzzService;
-import com.bcorpse.unittesing.unittesting.model.Item;
+import com.bcorpse.unittesing.business.ItemBuzzService;
+import com.bcorpse.unittesing.model.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

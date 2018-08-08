@@ -1,4 +1,4 @@
-package com.bcorpse.unittesing.unittesting;
+package com.bcorpse.unittesing;
 
 import org.json.JSONException;
 import org.junit.Test;
