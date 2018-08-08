@@ -1,4 +1,4 @@
-package com.bcorpse.unittesing.unittesting.business;
+package com.bcorpse.unittesing.business;
 
 public interface SomeDataService {
 

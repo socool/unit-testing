@@ -1,7 +1,7 @@
-package com.bcorpse.unittesing.unittesting.controller;
+package com.bcorpse.unittesing.controller;
 
-import com.bcorpse.unittesing.unittesting.business.ItemBuzzService;
-import com.bcorpse.unittesing.unittesting.model.Item;
+import com.bcorpse.unittesing.business.ItemBuzzService;
+import com.bcorpse.unittesing.model.Item;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

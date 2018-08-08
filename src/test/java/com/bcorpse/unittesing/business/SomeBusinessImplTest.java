@@ -1,6 +1,5 @@
-package com.bcorpse.unittesing.unittesting.business;
+package com.bcorpse.unittesing.business;
 
-import com.bcorpse.unittesing.unittesting.business.SomeBusinessImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

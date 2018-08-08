@@ -1,4 +1,4 @@
-package com.bcorpse.unittesing.unittesting.model;
+package com.bcorpse.unittesing.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -53,6 +53,9 @@ public class Item {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public Item(){
     }
 
     public Item(int id, String name, int price, int quantity){
