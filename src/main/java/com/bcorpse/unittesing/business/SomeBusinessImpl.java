@@ -1,5 +1,7 @@
 package com.bcorpse.unittesing.business;
 
+import java.util.Arrays;
+
 public class SomeBusinessImpl {
 
     public void setSomeDataService(SomeDataService someDataService) {
@@ -9,11 +11,9 @@ public class SomeBusinessImpl {
     private SomeDataService someDataService;
 
     public int calculateSum(int[] data){
-        int sum = 0;
-        for (int value:data){
-            sum += value;
-        }
-        return sum;
+        //1,2,3,4,5 => 1+2+3+4+5
+        return Arrays.stream(data).reduce(Integer::sum).orElse(0);
+
     }
 
     public int calculateSumUsingDataService(){
